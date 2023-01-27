@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anonymous FTP</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="title">
+          World Wide Web
+    </div>      <img src="Internet Logo.png" alt="Internet Logo" style="margin-left: 300px; margin-top: -100px;" class="internetLogo">
+  
+  <div class="allData">
+    <span style="font-weight: bold; color: dodgerblue; font-size: large;">Getting the W3 Files</span>
+      <p>
+        Read this if you have not yet got the WWW files you need, and you cannot NFS mount a directory on which they reside.
+      </p>
+
+      <p>
+        The source and binary of WWW project files are currently available (see copyright) by anonymous FTP from node info.cern.ch. This node is currently 128.141.201.74 but THIS MAY CHANGE. The files are compressed tape archive files (.tar.Z). To get a file using anonymous FTP, use user name "anonymous", and your email address as a password:-
+      </p>
+
+      <xmp>
+        > ftp info.cern.ch
+        Enter user name: anonymous
+        Password: me@myhost.edu
+        ftp> cd /pub/www/src
+        ftp> binary
+        ftp> get WWWLineMode_vvv.tar.Z
+        ftp> quit
+        >
+      </xmp>
+
+      <p>
+        The file name will depend on the product you want. Here vvv is the version number of the software.
+      </p>
+
+      <p>
+        Once you have the compressed tar file, you must uncompress it and unwrap it.
+      </p>
+
+      <xmp>
+        uncompress WWWLineMode_vvv.tar.Z
+      </xmp>
+
+      <p>
+        THis will make a rather larger file with the name without the "Z". To unwrap it,
+      </p>
+
+      <xmp>
+        tar xvf WWWLineMode_vvv.tar
+      </xmp>
+
+      <p>
+        Now you should install the line mode browser, install Viola, etc.
+        <br><i>Tim BL</i>
+      </p>
+  </div>
+
+  <div>
+    <button class="detailsButton" style="padding-right: +40px; background-color: rgb(151, 232, 240); font-size: large;">More Information</button>
+  </div>
+    <img src="dropdown arrow.jpg" alt="Dropdown Arrow" style="position: absolute; margin-top: -68px; margin-left: +175px;">
+
+  <div id="detailsListAll" style="visibility: hidden;">
+    <div class="infoButtons">
+      <a href="index.html"><button>Home</button></a>
+
+      <a href="hypermedia.html"><button>Hypermedia</button></a>
+
+      <a href="Summary.html"><button>Executive Summary</button></a>
+
+      <a href="Mailing_List.html"><button>Mailing List</button></a>
+
+      <a href="Policy.html"><button>Policy</button></a>
+      
+      <a href="W3 News.html"><button>W3 News</button></a>
+      
+      <a href="Frequetly Asked Questions.html"><button>Frequently Asked Questions</button></a>
+      
+      <a href="What's Out There.html"><button>What's Out there?</button></a>
+      
+      <a href="subject.html"><button>Subjects</button></a>
+      
+      <a href="W3 servers.html"><button>W3 Servers</button></a>
+      
+      <a href="Help.html"><button>Help</button></a>
+      
+      <a href="SoftwareProducts.html"><button>Software Products</button></a>
+      
+      <a href="Line Mode Browser.html"><button>Line Mode</button></a>
+      
+      <a href="Viola.html"><button>Viola</button></a>
+
+      <a href="NeXTStep.html"><button>NeXTStep</button></a>
+      
+      <a href="Servers.html"><button>Servers</button></a>
+      
+      <a href="Tools.html"><button>Tools</button></a>
+      
+      <a href="Mail Robot.html"><button>Mail Robots</button></a>
+      
+      <a href="Library.html"><button>Library</button></a>
+      
+      <a href="Technical.html"><button>Technical</button></a>
+      
+      <a href="Bibliography.html"><button>Bibliography</button></a>
+      
+      <a href="People.html"><button>People</button></a>
+      
+      <a href="History.html"><button>History</button></a>
+      
+      <a href="How can I help.html"><button>How can I help?</button></a>
+      
+      <a href="GettingCode.html"><button>Getting Code</button></a>
+      
+      <a href="AnonymousFTP.html"><button>Anonymous FTP</button></a>
+    </div>
+  </div>
+
+  <xmp style="color: white; font-weight: bolder;">
+    Phenom_J's Personal Design of the World-wide Web Project
+  </xmp>
+
+  <script>
+    document.querySelector('.detailsButton').onclick = function() {
+      
+      if (document.querySelector('#detailsListAll').style.visibility == "hidden") {
+        document.querySelector('#detailsListAll').style.visibility = "visible"
+      }
+
+      else if (document.querySelector('#detailsListAll').style.visibility == "visible") {
+        document.querySelector('#detailsListAll').style.visibility = "hidden"
+      }
+    }
+  </script>
+</body>
+</html>

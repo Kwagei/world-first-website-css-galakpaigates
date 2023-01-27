@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeXTStep</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="title">
+    World Wide Web
+  </div>      
+  <img src="Internet Logo.png" alt="Internet Logo" style="margin-left: 300px; margin-top: -100px;" class="internetLogo">
+
+  <div class="allData">
+      <span style="font-weight: bold; color: dodgerblue; font-size: large;">WWW User Guide</span>
+
+      <p>
+        The "WorldWideWeb" application for the NeXT is a prototype Hypertext browser/editor. It allows direct access to Hypertext Servers, files and news. See also further Information:
+      </p>
+
+      <p>
+        <ol style="margin-left: 21px;">
+          <li>HELP: A description of the Menu Items.</li>
+          <li>Installation Notes.</li>
+          <li>Background: The WorldWideWeb Project of which this is a part.</li>
+          <li>Known Problems: Bug List</li>
+          <li>The Source FIles used by the Project Software</li>
+        </ol>
+      </p>
+
+      <p>
+        <h4>
+          General
+        </h4>
+      </p>
+
+      <p>
+        When you double-click on the WorldWideWeb icon, the application by default displays your own home page, ~/WWW/default.html, or falling that the system home page, /usr/local/lib/WWW/default.html.
+      </p>
+
+      <p>
+        From then on, if you want to select a document refered to
+        by a page being displayed, you just double click on an areas of gray text. (Gray was chosen so as not to use up other highlighting techniques such as bold or italic, which authors may want to use for other things. When color comes along, we can use colour...)
+      </p>
+
+      <p>
+        If you double-click anywhere else in the whole document, you will select a word, as is usual on the NeXT.
+      </p>
+
+      <p>
+        Some gray areas lead to whole documents, while some bring up a document with a particular target area highlighted. This is called the destination anchor. It is not gray unless it in turn leads somewhere else, but double clicking on a destination anchor selects the whole anchor.
+      </p>
+
+      <p>
+        <h4>
+          Indexes
+        </h4>
+      </p>
+
+      <p>
+        Certain Documents are Indexes. They normally hace only a small amount of text. You cannot read the index yourself (it may be very big). To access something through the index, use the "Keyword Search" menu option. The Window with the Index in it must be in the main window (dark title bar) when you use the keyword search panel. The rules used by indexes to search for matches vary. Different indexes use different techniques, and cover different renges of information.
+      </p>
+
+      <p>
+        When a search is successful, the result is a page of references to documents. You select documents from it by double-clicking in the usual way.
+      </p>
+
+      <p>
+        <h4>
+          See also:
+        </h4>
+
+        <ol style="margin-left: 21px;">
+          <li>Making your own documents</li>
+        </ol>
+      </p>
+  </div>
+  
+  <div>
+    <button class="detailsButton" style="padding-right: +40px; background-color: rgb(151, 232, 240); font-size: large;">More Information</button>
+  </div>
+    <img src="dropdown arrow.jpg" alt="Dropdown Arrow" style="position: absolute; margin-top: -68px; margin-left: +175px;">
+
+  <div id="detailsListAll" style="visibility: hidden;">
+    <div class="infoButtons">
+      <a href="index.html"><button>Home</button>
+
+      <a href="hypermedia.html"><button>Hypermedia</button>
+
+      <a href="Summary.html"><button>Executive Summary</button>
+
+      <a href="Mailing_List.html"><button>Mailing List</button>
+
+      <a href="Policy.html"><button>Policy</button>
+      
+      <a href="W3 News.html"><button>W3 News</button>
+      
+      <a href="Frequetly Asked Questions.html"><button>Frequently Asked Questions</button>
+      
+      <a href="What's Out There.html"><button>What's Out there?</button>
+      
+      <a href="subject.html"><button>Subjects</button>
+      
+      <a href="W3 servers.html"><button>W3 Servers</button>
+      
+      <a href="Help.html"><button>Help</button>
+      
+      <a href="SoftwareProducts.html"><button>Software Products</button>
+      
+      <a href="Line Mode Browser.html"><button>Line Mode</button>
+      
+      <a href="Viola.html"><button>Viola</button>
+
+      <a href="NeXTStep.html"><button>NeXTStep</button>
+      
+      <a href="Servers.html"><button>Servers</button>
+      
+      <a href="Tools.html"><button>Tools</button>
+      
+      <a href="Mail Robot.html"><button>Mail Robots</button>
+      
+      <a href="Library.html"><button>Library</button>
+      
+      <a href="Technical.html"><button>Technical</button>
+      
+      <a href="Bibliography.html"><button>Bibliography</button>
+      
+      <a href="People.html"><button>People</button>
+      
+      <a href="History.html"><button>History</button>
+      
+      <a href="How can I help.html"><button>How can I help?</button>
+      
+      <a href="GettingCode.html"><button>Getting Code</button>
+      
+      <a href="AnonymousFTP.html"><button>Anonymous FTP</button>
+    </div>
+  </div>
+
+  <xmp style="color: white; font-weight: bolder;">
+    Phenom_J's Personal Design of the World-wide Web Project
+  </xmp>
+
+  <script>
+    document.querySelector('.detailsButton').onclick = function() {
+      
+      if (document.querySelector('#detailsListAll').style.visibility == "hidden") {
+        document.querySelector('#detailsListAll').style.visibility = "visible"
+      }
+
+      else if (document.querySelector('#detailsListAll').style.visibility == "visible") {
+        document.querySelector('#detailsListAll').style.visibility = "hidden"
+      }
+    }
+  </script>
+</body>
+</html>

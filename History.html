@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="title">
+    World Wide Web
+</div>      <img src="Internet Logo.png" alt="Internet Logo" style="margin-left: 300px; margin-top: -100px;" class="internetLogo">
+
+<div class="allData">
+    <span style="font-weight: bold; color: dodgerblue; font-size: large;">History to Date</span>
+      <p>
+        A few steps to date in the WWW project history are as follows:
+      </p>
+
+      <p>
+            March 1989
+        <br>First Project Proposal written and circulated for comment (TBL) . Paper "HyperText and CERN" (in ASCII or WriteNow format) produced as background.</br>
+        October 1990
+      <br>Project proposal reformulated with encouragement from CN and ECP divisional management. RC is co-author.</br>
+        November 1990
+      <br>Initial WorldWideWeb prototype developed on the NeXT (TBL).</br>
+        November 1990
+      <br>Nicola Pellow joins and starts work on the line-mode browser. Bernd Pollermann helps get interface to CERNVM "FIND" index running. TBL gives a colloquium on hypertext in general.</br>
+        Christmas 1990
+      <br>Line mode and NeXTStep browsers demonstrable. Acces is possible to hypertext files, CERNVM "FIND", and internet news articles.</br>
+        Febraury 1991
+      <br>workplan for the purposes of ECP division.</br>
+        26 February 1991
+      <br>Presentation of the project to the ECP group.</br>
+        March 1991
+      <br>Line mode browser (www) released to limited audience on priam vax, rs6000, sun4.</br>
+        May 1991
+      <br>Workplan produced for CN/AS group</br>
+        17 May 1991
+      <br>Presentation to C5 committee. General release of www on central CERN machines.</br>
+        12 June 1991
+      <br>CERN Computer Seminar on WWW.</br>
+        August 1991
+      <br>Files available on the net, posted on alt.hypertext (6, 16, 19th Aug), comp.sys.next (20th), comp.text.sgml and comp.mail.multi-media (22nd). Jean-Francois Groff joins the project.</br>
+        October 1991
+      <br>VMS/HELP and WAIS gateways installed. Mailing lists www-interest (now www-announce) and www-talk@info.cern.ch started. One year status report. Anonymous telnet service started.</br>
+        December 1991
+      <br>Presented poster and demonstration at HT91 . W3 browser installed on VM/CMS. CERN computer newsletter announces W3 to the HEP world.</br>
+        15 January 1992
+      <br>Line mode browser release 1.1 available by anonymous FTP. See news . Presentation to AIHEP'92 at La Londe.</br>
+        12 February 1992
+      <br>Line mode v 1.2 annouced on alt.hypertext, comp.infosystems, comp.mail.multi-media, cern.sting, comp.archives.admin, and mailing lists.</br>
+        May 1992
+      <br>Presentation and demo at JENC3 (Innsbruck). Carl Barker joins the project.</br>
+        June 1992
+      <br>Presentation and demo at HEPVM (Lyon).</br>
+        July 1992
+      <br>Distribution of WWW through CernLib, including Viola. WWW library code ported to DECnet. Report to the Advisory Board on Computing.</br>
+        August 1992
+      <br>introduction of CVS for code management.</br>
+      </p>
+  </div>
+  
+  <div>
+    <button class="detailsButton" style="padding-right: +40px; background-color: rgb(151, 232, 240); font-size: large;">More Information</button>
+  </div>
+    <img src="dropdown arrow.jpg" alt="Dropdown Arrow" style="position: absolute; margin-top: -68px; margin-left: +175px;">
+
+  <div id="detailsListAll" style="visibility: hidden;">
+    <div class="infoButtons">
+      <a href="index.html"><button>Home</button>
+
+      <a href="hypermedia.html"><button>Hypermedia</button>
+
+      <a href="Summary.html"><button>Executive Summary</button>
+
+      <a href="Mailing_List.html"><button>Mailing List</button>
+
+      <a href="Policy.html"><button>Policy</button>
+      
+      <a href="W3 News.html"><button>W3 News</button>
+      
+      <a href="Frequetly Asked Questions.html"><button>Frequently Asked Questions</button>
+      
+      <a href="What's Out There.html"><button>What's Out there?</button>
+      
+      <a href="subject.html"><button>Subjects</button>
+      
+      <a href="W3 servers.html"><button>W3 Servers</button>
+      
+      <a href="Help.html"><button>Help</button>
+      
+      <a href="SoftwareProducts.html"><button>Software Products</button>
+      
+      <a href="Line Mode Browser.html"><button>Line Mode</button>
+      
+      <a href="Viola.html"><button>Viola</button>
+
+      <a href="NeXTStep.html"><button>NeXTStep</button>
+      
+      <a href="Servers.html"><button>Servers</button>
+      
+      <a href="Tools.html"><button>Tools</button>
+      
+      <a href="Mail Robot.html"><button>Mail Robots</button>
+      
+      <a href="Library.html"><button>Library</button>
+      
+      <a href="Technical.html"><button>Technical</button>
+      
+      <a href="Bibliography.html"><button>Bibliography</button>
+      
+      <a href="People.html"><button>People</button>
+      
+      <a href="History.html"><button>History</button>
+      
+      <a href="How can I help.html"><button>How can I help?</button>
+      
+      <a href="GettingCode.html"><button>Getting Code</button>
+      
+      <a href="AnonymousFTP.html"><button>Anonymous FTP</button>
+    </div>
+  </div>
+
+  <xmp style="color: white; font-weight: bolder;">
+    Phenom_J's Personal Design of the World-wide Web Project
+  </xmp>
+
+  <script>
+    document.querySelector('.detailsButton').onclick = function() {
+      
+      if (document.querySelector('#detailsListAll').style.visibility == "hidden") {
+        document.querySelector('#detailsListAll').style.visibility = "visible"
+      }
+
+      else if (document.querySelector('#detailsListAll').style.visibility == "visible") {
+        document.querySelector('#detailsListAll').style.visibility = "hidden"
+      }
+    }
+  </script>
+</body>
+</html>

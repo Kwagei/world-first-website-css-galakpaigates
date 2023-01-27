@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is Hypertext? - Rebulit</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="title">
+    World Wide Web
+  </div>      
+<img src="Internet Logo.png" alt="Internet Logo" style="margin-left: 300px; margin-top: -100px;" class="internetLogo">
+
+<div class="allData">
+    <span style="font-weight: bold; color: dodgerblue; font-size: large;">What is Hypertext?</span>
+      <p>
+        Hypertext is text which is not constrained to be linear.
+      </p>
+
+      <p>
+        Hypertext is text which contains links to other texts. The term was coined by Ted Nelson around 1965 (see History).
+      </p>
+
+      <p>
+        HyperMedia is a term used for hypertext which is not constrained to be text: it can include graphics, video and sound, for example. Apparently Ted Nelson was the first to use this term too.
+      </p>
+
+      <p>
+        Hypertext and HyperMedia are concepts, not products.
+      </p>
+
+      <p>
+        See also:
+        <ol style="margin-left: 21px;">
+            <li>A list of terms used in hypertext literature.</li>
+            <li>Conferences.</li>
+            <li>Commercial (and academic) products</li>
+            <li>A newsgroup on hypertext, "alt.hypertext".</li>
+            <li>WorldWideWeb is a project which uses hypertext concepts.</li>
+            <li>Standards.</li>
+        </ol>
+      </p>
+  </div>
+  
+  <div>
+    <button class="detailsButton" style="padding-right: +40px; background-color: rgb(151, 232, 240); font-size: large;">More Information</button>
+  </div>
+    <img src="dropdown arrow.jpg" alt="Dropdown Arrow" style="position: absolute; margin-top: -68px; margin-left: +175px;">
+
+  <div id="detailsListAll" style="visibility: hidden;">
+    <div class="infoButtons">
+      <a href="index.html"><button>Home</button>
+
+      <a href="hypermedia.html"><button>Hypermedia</button>
+
+      <a href="Summary.html"><button>Executive Summary</button>
+
+      <a href="Mailing_List.html"><button>Mailing List</button>
+
+      <a href="Policy.html"><button>Policy</button>
+      
+      <a href="W3 News.html"><button>W3 News</button>
+      
+      <a href="Frequetly Asked Questions.html"><button>Frequently Asked Questions</button>
+      
+      <a href="What's Out There.html"><button>What's Out there?</button>
+      
+      <a href="subject.html"><button>Subjects</button>
+      
+      <a href="W3 servers.html"><button>W3 Servers</button>
+      
+      <a href="Help.html"><button>Help</button>
+      
+      <a href="SoftwareProducts.html"><button>Software Products</button>
+      
+      <a href="Line Mode Browser.html"><button>Line Mode</button>
+      
+      <a href="Viola.html"><button>Viola</button>
+
+      <a href="NeXTStep.html"><button>NeXTStep</button>
+      
+      <a href="Servers.html"><button>Servers</button>
+      
+      <a href="Tools.html"><button>Tools</button>
+      
+      <a href="Mail Robot.html"><button>Mail Robots</button>
+      
+      <a href="Library.html"><button>Library</button>
+      
+      <a href="Technical.html"><button>Technical</button>
+      
+      <a href="Bibliography.html"><button>Bibliography</button>
+      
+      <a href="People.html"><button>People</button>
+      
+      <a href="History.html"><button>History</button>
+      
+      <a href="How can I help.html"><button>How can I help?</button>
+      
+      <a href="GettingCode.html"><button>Getting Code</button>
+      
+      <a href="AnonymousFTP.html"><button>Anonymous FTP</button>
+    </div>
+  </div>
+
+  <xmp style="color: white; font-weight: bolder;">
+    Phenom_J's Personal Design of the World-wide Web Project
+  </xmp>
+
+  <script>
+    document.querySelector('.detailsButton').onclick = function() {
+      
+      if (document.querySelector('#detailsListAll').style.visibility == "hidden") {
+        document.querySelector('#detailsListAll').style.visibility = "visible"
+      }
+
+      else if (document.querySelector('#detailsListAll').style.visibility == "visible") {
+        document.querySelector('#detailsListAll').style.visibility = "hidden"
+      }
+    }
+  </script>
+</body>
+</html>

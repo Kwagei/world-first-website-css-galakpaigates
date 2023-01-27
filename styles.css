@@ -1,0 +1,82 @@
+html {
+  background-color: gray;
+}
+
+* {
+  font-family: "Cambria", "Cochin", "Georgia", "Times", "Times New Roman", "serif";
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-bottom: 21px;
+}
+
+.details {
+  font-size: large;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+a {
+  font-style: normal;
+}
+
+button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgb(89, 180, 188);
+  text-align: center;
+  border: none;
+  font-family: "Cambria", "Cochin", "Georgia", "Times", "Times New Roman", "serif";
+  font-weight: bold;
+  border-radius: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 7px;
+  margin-top: 15px;
+  margin-left: 12px;
+  flex-wrap: wrap;
+  transition: box-shadow, 0.2s;
+}
+
+button:hover {
+  box-shadow: 0px 0px 10px white;
+}
+
+#detailsListAll {
+  width: 95%;
+  background-color: rgb(76, 77, 77);
+  border-radius: 15px;
+  padding-top: 7px;
+  color: white;
+}
+
+.allData {
+  width: 95%;
+  background-color: rgb(76, 77, 77);
+  border-radius: 15px;
+  padding: 7px;
+  margin-top: 120px;
+  color: white;
+}
+
+.internetLogo {
+  width: 50px;
+  height: 55px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 7px;
+  position: absolute;
+}
+
+.title {
+  color: dodgerblue;
+  text-transform: uppercase;
+  font-size: xx-large;
+  font-weight: 900;
+  display: inline;
+  padding-top: 40px;
+  margin-top: -130px;
+  margin-right: 45px;
+  position: absolute;
+}/*# sourceMappingURL=styles.css.map */

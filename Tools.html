@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .horizontal_row {
+      width: 550px;
+      margin-left: 0px;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="title">
+    World Wide Web
+  </div>      
+  <img src="Internet Logo.png" alt="Internet Logo" style="margin-left: 300px; margin-top: -100px;" class="internetLogo">
+
+  <div class="allData">
+      <span style="font-weight: bold; color: dodgerblue; font-size: large;">W3 Tools</span>
+
+  <p>
+    These tools aid managements of W3 Servers, generation of hypertext, etc.
+  </p>
+
+  <p>
+    W3 Basic Daemon
+  
+  <br>Part of the W3 Project Code.</br>
+  
+    Gateway Servers
+  
+  <br>which you can take and adapt.</br>
+  
+    Framemaker Interface
+  
+  <br>There are some tar files on the anonymous FTP archive on file://info.cern.ch/www/src which allow FRAMEmaker to be used as a W3 tool. Dan Cololly, Convex. Includes MIF HTML translation.</br>
+  
+    Making HTML into TeX
+  
+  <br>We did this with the "WWW Book" to print it. See the Makefile for example, and the scripts html2latex.sed and sub1.sed. We wrote a special introduction, but otherwise all the text was hypertext from the W3 Project.</br>
+  
+    Generating HTML
+  
+  <br>These are scripts for generating SGML hypertext from things like directory listings, etc. Also, for checking and correcting dubious HTML.</br>
+  
+    Server log analysis
+  
+  <br>Analysing server logs requires first of all changing the numeric internet node numbers into domain names. httpd-analyse.c is a program to do that. Feed the results through awk and grep of your choice!</br>
+  </p>
+
+  <hr class="horizontal_row">
+
+  <p>
+    <i>Tim BL</i>
+  </p>
+</div>
+  
+  <div>
+    <button class="detailsButton" style="padding-right: +40px; background-color: rgb(151, 232, 240); font-size: large;">More Information</button>
+  </div>
+    <img src="dropdown arrow.jpg" alt="Dropdown Arrow" style="position: absolute; margin-top: -68px; margin-left: +175px;">
+
+  <div id="detailsListAll" style="visibility: hidden;">
+    <div class="infoButtons">
+      <a href="index.html"><button>Home</button>
+
+      <a href="hypermedia.html"><button>Hypermedia</button>
+
+      <a href="Summary.html"><button>Executive Summary</button>
+
+      <a href="Mailing_List.html"><button>Mailing List</button>
+
+      <a href="Policy.html"><button>Policy</button>
+      
+      <a href="W3 News.html"><button>W3 News</button>
+      
+      <a href="Frequetly Asked Questions.html"><button>Frequently Asked Questions</button>
+      
+      <a href="What's Out There.html"><button>What's Out there?</button>
+      
+      <a href="subject.html"><button>Subjects</button>
+      
+      <a href="W3 servers.html"><button>W3 Servers</button>
+      
+      <a href="Help.html"><button>Help</button>
+      
+      <a href="SoftwareProducts.html"><button>Software Products</button>
+      
+      <a href="Line Mode Browser.html"><button>Line Mode</button>
+      
+      <a href="Viola.html"><button>Viola</button>
+
+      <a href="NeXTStep.html"><button>NeXTStep</button>
+      
+      <a href="Servers.html"><button>Servers</button>
+      
+      <a href="Tools.html"><button>Tools</button>
+      
+      <a href="Mail Robot.html"><button>Mail Robots</button>
+      
+      <a href="Library.html"><button>Library</button>
+      
+      <a href="Technical.html"><button>Technical</button>
+      
+      <a href="Bibliography.html"><button>Bibliography</button>
+      
+      <a href="People.html"><button>People</button>
+      
+      <a href="History.html"><button>History</button>
+      
+      <a href="How can I help.html"><button>How can I help?</button>
+      
+      <a href="GettingCode.html"><button>Getting Code</button>
+      
+      <a href="AnonymousFTP.html"><button>Anonymous FTP</button>
+    </div>
+  </div>
+
+  <xmp style="color: white; font-weight: bolder;">
+    Phenom_J's Personal Design of the World-wide Web Project
+  </xmp>
+
+  <script>
+    document.querySelector('.detailsButton').onclick = function() {
+      
+      if (document.querySelector('#detailsListAll').style.visibility == "hidden") {
+        document.querySelector('#detailsListAll').style.visibility = "visible"
+      }
+
+      else if (document.querySelector('#detailsListAll').style.visibility == "visible") {
+        document.querySelector('#detailsListAll').style.visibility = "hidden"
+      }
+    }
+  </script>
+</body>
+</html>

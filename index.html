@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" conten t="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The World-wide Web Project - Rebulit</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div>
+    <div class="title">
+          World Wide Web
+    </div>      <img src="Internet Logo.png" alt="Internet Logo" style="margin-left: 300px; margin-top: -100px;" class="internetLogo">
+
+  </div>
+
+  <div class="allData">
+    <p>
+      The WorldWideWeb (W3) is a wide-area hypermedia information retreival initiative aiming to give universal access to a large universe of documents.
+    </p>
+
+    <p>
+      Everything there is online about W3 is linked directly or indirectly to this document, including an executive summary of the project, Mailing lists, Policy, November's W3 news, Frequently Asked Questions.<br>
+    What's Out there?
+      Pointers to the world's online information, subjects, W3 servers, etc.<br>
+    Help
+      on the browser you are using
+    Software Products
+      A list of W3 project components and their current state. (e.g. Line Mode, X11 Viola, NeXTStep, Servers, Tools, Mail Robot, Library).<br>
+    Technical
+      Details of protocols, formats, program internals etc
+    Bibliography
+      Paper documentation on W3 and references.
+    People
+      A list of some people involved in the project.<br>
+    History
+      A summary of the history of the project.
+    How can I help?
+      If you would like to support the web.
+    Getting Code
+      Getting the code by anonymous FTP, etc.
+    </p>   
+  </div>
+
+  <div>
+    <button class="detailsButton" style="padding-right: +40px; background-color: rgb(151, 232, 240); font-size: large;">More Information</button>
+  </div>
+    <img src="dropdown arrow.jpg" class="dropdown" alt="Dropdown Arrow" style="position: absolute; margin-top: -68px; margin-left: +175px;">
+
+  <div id="detailsListAll" style="visibility: hidden;">
+    <div class="infoButtons">
+      <a href="index.html"><button>Home</button></a>
+
+      <a href="hypermedia.html"><button>Hypermedia</button></a>
+
+      <a href="Summary.html"><button>Executive Summary</button></a>
+
+      <a href="Mailing_List.html"><button>Mailing List</button></a>
+
+      <a href="Policy.html"><button>Policy</button></a>
+      
+      <a href="W3 News.html"><button>W3 News</button></a>
+      
+      <a href="Frequetly Asked Questions.html"><button>Frequently Asked Questions</button></a>
+      
+      <a href="What's Out There.html"><button>What's Out there?</button></a>
+      
+      <a href="subject.html"><button>Subjects</button></a>
+      
+      <a href="W3 servers.html"><button>W3 Servers</button></a>
+      
+      <a href="Help.html"><button>Help</button></a>
+      
+      <a href="SoftwareProducts.html"><button>Software Products</button></a>
+      
+      <a href="Line Mode Browser.html"><button>Line Mode</button></a>
+      
+      <a href="Viola.html"><button>Viola</button></a>
+
+      <a href="NeXTStep.html"><button>NeXTStep</button></a>
+      
+      <a href="Servers.html"><button>Servers</button></a>
+      
+      <a href="Tools.html"><button>Tools</button></a>
+      
+      <a href="Mail Robot.html"><button>Mail Robots</button></a>
+      
+      <a href="Library.html"><button>Library</button></a>
+      
+      <a href="Technical.html"><button>Technical</button></a>
+      
+      <a href="Bibliography.html"><button>Bibliography</button></a>
+      
+      <a href="People.html"><button>People</button></a>
+      
+      <a href="History.html"><button>History</button></a>
+      
+      <a href="How can I help.html"><button>How can I help?</button></a>
+      
+      <a href="GettingCode.html"><button>Getting Code</button></a>
+      
+      <a href="AnonymousFTP.html"><button>Anonymous FTP</button></a>
+    </div>
+  </div>
+
+  <xmp style="color: white; font-weight: bolder;">
+    Phenom_J's Personal Design of the World-wide Web Project
+  </xmp>
+
+  <script>
+    document.querySelector('.dropdown').onclick = function() {
+      
+      if (document.querySelector('#detailsListAll').style.visibility == "hidden") {
+        document.querySelector('#detailsListAll').style.visibility = "visible"
+      }
+
+      else if (document.querySelector('#detailsListAll').style.visibility == "visible") {
+        document.querySelector('#detailsListAll').style.visibility = "hidden"
+      }
+    }
+  </script> 
+</body>
+</html>
